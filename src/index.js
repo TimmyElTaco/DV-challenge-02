@@ -25,7 +25,7 @@ const imageEl = document.querySelector('.player-image');
 const song = document.querySelector('#song');
 
 document.addEventListener('DOMContentLoaded', () => {
-    range.addEventListener('change', () => {
+    range.addEventListener('input', () => {
         song.currentTime = range.value;
         updateRange();
     });
